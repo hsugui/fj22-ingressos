@@ -149,5 +149,12 @@
             </plugin>
         </plugins>
     </build>
+    
+    <developers>
+    	<developer>
+    		<name>Henricão da Massa</name>
+    		<email>henricao@massa.com.br</email>
+    	</developer>
+    </developers>
 
 </project>
