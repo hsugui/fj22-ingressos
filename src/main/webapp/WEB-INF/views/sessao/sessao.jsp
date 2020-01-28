@@ -31,7 +31,8 @@
                         <option value="${filme.id}" ${filme.id.equals(form.filmeId)? "selected": ""}>${filme.nome}</option>
                     </c:forEach>
                 </select>
-                <c:forEach items="${bindingResult.getFieldErrors('filmeId')}" var="error">
+				<c:forEach items="${bindingResult.getFieldErrors('filmeId')}" var="error">
+                    <span class="text-danger">${error.sessionConflict}</span>
                     <span class="text-danger">${error.defaultMessage}</span>
                 </c:forEach>
             </div>
